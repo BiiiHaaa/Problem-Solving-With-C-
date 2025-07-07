@@ -23,6 +23,24 @@ using namespace std;
 
 
 int main () {
-    
-
+    int number;
+    cout << "Please enter e number" << endl;
+    cin >> number;
+    for(int i =0 ; i<6 ; i++) {
+        if(i==0 || i==5) {
+            for(int j=0 ; j<4;j++) {
+                cout << number;
+            }
+            cout << endl;
+        }else {
+                for(int k = 0  ; k<3 ;k++) {
+                    if(k == 0 || k==2){
+                        cout << number;
+                    }else {
+                        cout << " ";
+                    }
+                }
+                cout << endl;
+            }
+    }
 }
