@@ -4,6 +4,6 @@
 #include <algorithm>
 #include <chrono>
 using namespace std;
-void Word(string Word) {
+int main () {
     
 }
