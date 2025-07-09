@@ -16,5 +16,10 @@ The volume of a cylinder is : 401.92
 using namespace std;
 
 int main() {
-    
+    float radius , height ;
+    cout << "Please enter the radius of the cylinder : " << endl;
+    cin  >> radius;
+    cout << "Please enter the height of the cylinder : " << endl;
+    cin >> height;
+    cout  << "The volume of a cylinder is : " <<3.14 * (radius * radius) * height;
 }
