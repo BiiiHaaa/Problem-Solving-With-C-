@@ -6,6 +6,7 @@
     Nums.push_back(50);
     cout << Nums.at(4)<<endl;
     Nums.pop_back(); 
+    cout << endl <<"========" << endl; 
     vector<int> Nums = {10 , 20 , 30 , 40};
     cout << Nums.size()<<endl;
     cout << Nums.max_size()<<endl;
@@ -15,7 +16,31 @@
     cout << Nums.size()<<endl;
     cout << Nums.at(Nums.size()-1)<<endl;
     Nums.clear();
-    cout << Nums.empty()<<endl;*/
+    cout << Nums.empty()<<endl;
+    cout << endl <<"========" << endl; 
+    vector<int> Nums = {10 , 20 , 30 , 40};
+   vector<int>::iterator it = Nums.begin();
+   auto itr = Nums.begin() + 1;
+   cout << "First element is : " << *it << endl;
+   cout << "Second element is : " << *itr << endl;
+   Nums.erase(Nums.begin());
+   cout << "First element after delete is : " << *it << endl;
+   cout << "Second element after delete is : " << *it << endl;
+   cout << endl <<"========" << endl; 
+   vector<int> Nums = {10 , 20 , 30 , 40};  
+    vector<int>::iterator Firsrt = Nums.begin();
+    vector<int>::iterator Last = Nums.end()-1;
+    cout << "The First element is : " << *Firsrt << endl;
+    cout << "The Second element is : " << Firsrt[1] << endl;
+    cout << "The Third element is : " << Firsrt[2] << endl;
+    cout << "The Last element is : " << *Last << endl;
+    cout << "The befer Last element is : " << *Last - 1 << endl;
+    cout << "The Last element is : " << *(Last - 1) << endl;
+    advance(Firsrt , 3);
+    cout << "The First element is : " << *Firsrt << endl;
+    advance(Firsrt , -2);
+    cout << "The First element is : " << *Firsrt << endl;
+    */
 
 #include <iostream>
 #include <cctype>
@@ -25,13 +50,5 @@
 #include <vector>
 using namespace std;
 int main () {
-  string word , reversed_word ; 
-
-  cout << "Please enter a word" <<endl;
-  cin >> word;
-  for(int i = 0 ; i<word.size();i++) {
-    reversed_word[i] = word[word.size() - (i+1)]; 
-  }
-  cout << reversed_word <<endl;
-  cout << "The word : "<< word <<" becom : "<<reversed_word <<" after the reverse string." <<endl;
+  
 }
