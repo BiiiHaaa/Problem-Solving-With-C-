@@ -50,4 +50,16 @@
 #include <vector>
 using namespace std;
 int main () {
+    string Word;
+    int repeat;
+    cout << "Please enter a word : " << endl;
+    cin >> Word;
+    cout << "Please enter how many time do you want to reapeat your string" << endl;
+    cin  >> repeat;
+    for(int i = 0; i<repeat;i++) {
+        for(int j = 0;j<Word.size();j++) {
+            cout << Word[j];
+        }
+        cout << " ";
+    }
 }

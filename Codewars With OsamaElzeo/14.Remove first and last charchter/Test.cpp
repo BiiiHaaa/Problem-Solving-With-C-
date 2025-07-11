@@ -50,4 +50,11 @@
 #include <vector>
 using namespace std;
 int main () {
+    string Word;
+    cout << "Please enter a word : " << endl;
+    cin >> Word;
+    cout << "The new word of : "<<Word << " After delete the first and the last charchter is : ";
+    for(int  i =1;i<Word.size()-1;i++) {
+        cout <<  Word[i];   
+    }   
 }

@@ -50,4 +50,18 @@
 #include <vector>
 using namespace std;
 int main () {
+  int nums[] = {1 , 2 , 3 , 4 , 5};
+  int Multiply =1;
+  cout << "Le resultet de la meltiplication de : ";
+  for(int i =0;i<(sizeof(nums) /sizeof(nums[0]));i++) {
+    if(i==(sizeof(nums) /sizeof(nums[0]))-1) {
+      cout << nums[i]  ;
+    }else {
+      cout << nums[i] << " x " ;
+    }
+     
+    Multiply = Multiply * nums[i];
+
+  }
+  cout << " est : " << Multiply << endl;
 }

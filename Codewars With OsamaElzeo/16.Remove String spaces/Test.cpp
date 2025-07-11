@@ -50,4 +50,13 @@
 #include <vector>
 using namespace std;
 int main () {
+    //string Word = "W   O  r  l   d";
+    string Word = "B  i i i H     a a a ";
+    cout << "The word " <<Word<< " Without String will be look like : " ;
+    for(int i = 0;i<Word.size();i++) {
+        if(int(Word[i])==32) {
+            continue;
+        }
+        cout << Word[i]; 
+    }   
 }
