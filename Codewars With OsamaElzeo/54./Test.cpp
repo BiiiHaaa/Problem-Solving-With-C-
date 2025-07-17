@@ -6,5 +6,8 @@
 #include <vector>
 using namespace std;
 int main () {
-    cout << "Hello";
+    string num = "10";
+    cout << stoi(num);
+    int nums = 10;
+    cout << to_string(nums);
 }
