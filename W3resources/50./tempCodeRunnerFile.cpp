@@ -1,0 +1,1 @@
+isupper(Word[i])

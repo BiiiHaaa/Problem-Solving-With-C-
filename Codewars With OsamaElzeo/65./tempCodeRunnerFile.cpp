@@ -1,0 +1,1 @@
+Num_To_String.size()-1
